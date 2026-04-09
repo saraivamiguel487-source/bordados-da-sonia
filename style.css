@@ -110,8 +110,15 @@ a:hover{
 .area-busca{
     width: 1400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
+
+}
+.catalogo-titulo{
+    font-size: 50px;
+    color: #3B929C;
+    margin-bottom: 50px;
 
 }
 .busca{
@@ -135,5 +142,5 @@ a:hover{
     font-size: 30px;
     border: none;
     background-color: transparent;
-    color:#3B929C
+    color:#3B929C;
 }
