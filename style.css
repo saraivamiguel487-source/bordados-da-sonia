@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-    --cor-principal: #3B929C;
-    --cor-secundaria: #FFFFFF;
-    --cor-botao:#E78887;
+    --cor-principal: #FF3BC4;
+    --cor-secundaria: #FFFF02;
+    --cor-botao: #d9d9d9;
+    --largura-principal: 1600px;
+
 }
 
 
@@ -36,6 +38,7 @@ nav{
     height: 110px;
     width: 95%;
     margin: auto;
+
 }
 
 ul{
@@ -44,7 +47,7 @@ ul{
     list-style: none;
 }
 
-a{
+.icones{
     text-decoration: none;
     color: var(--cor-secundaria);
     font-size: 25px;
@@ -53,13 +56,13 @@ a{
     border-radius: 0 20px;
 }
 
-a:hover{
+.icones:hover{
     background-color: var(--cor-botao);
     color: var(--cor-secundaria);
     border: none;
 }
 
-a:focus{
+.icones:focus{
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
 }
@@ -75,16 +78,16 @@ main{
 
 
 #banner{
-    width: 1400px;
+    width: var(--largura-principal);
 }
 
 #banner__image{
     margin-top: 10px;
-    width: 1400px;
+    width: var(--largura-principal);
 }
 
 #reservas {
-    width: 1400px;
+    width: var(--largura-principal);
     height: 144px;
     border: 2px dashed var(--cor-principal);
     color: var(--cor-principal);
@@ -121,7 +124,7 @@ main{
 
 .area-sobre{
     display: flex;
-    width: 1400px;
+    width: var(--largura-principal);
     margin:20px auto;
     justify-content: space-around;
 }
@@ -186,11 +189,12 @@ main{
 
  .bordados{
     text-align: center;
+    color:var(--cor-principal);
  }
 
  .catalogo{
     margin:100px  auto;
-    width: 1400px;
+    width: var(--largura-principal);
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
