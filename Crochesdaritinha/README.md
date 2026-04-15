@@ -1,1 +1,0 @@
-# croch-s-da-Ritinha
