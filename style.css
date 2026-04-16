@@ -270,7 +270,8 @@ width: var(--largura-celular)
 
 }
 .sobre__texto{
-        font-size: 20px;
+        font-size: 25px;
+        align-items: flex-start;
         padding: 20px;
 
 }
@@ -284,17 +285,30 @@ hr{
 }
 .area-busca{
     width: var(--largura-celular);
+    align-items: flex-start;
 }
 .catalogo-titulo{
-    font-size: 35px;
+    font-size: 25px;
     margin: 100px auto;
+    align-items: flex-start;
 
 }
 .catalogo{
-width: var(--largura-celular);
+    width: var(--largura-celular);
+    align-content: space-between;
+    gap: 20px;
 }
 
+.bordados>a>img{
+    width: 180px;
+
+}
+main{
+    margin-top: 80px;
+}
 .busca{
     width: 350px;
+
 }
+
 }
