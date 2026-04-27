@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header>
+        <nav class="area-navegação">
+            <img class="logo" src="img/logo-tia-sonia.png" alt="logo do site" width="100px">
+            <ul>
+                <li><a class="icones" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a class="icones" href="#Bordados"><i class="fa solid fa-pen-ruler"></i></a></li>
+                <li><a class="icones" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a class="icones" href="cadastro.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="area-cadastro">
         <section class="area-titulo formatacao">
             <h1>Cadastre-se</h1>
@@ -16,60 +32,60 @@
         <section class="area-formulario formatacao">
             <form action="#" class="form-cadastro">
                 <div class="area-nome formatacao">
-                    <div class="nome">
-                        <label for="nome">Põe o seu nome:</label>
+                    <div class="nome titulo-campo">
+                        <label for="nome">Nome:</label>
                         <input type="text" id="nome" required>
                     </div>
-                    <div class="sobrenome">
-                        <label for="sobrenome">Põe o seu Sobrenome:</label>
+                    <div class="sobrenome titulo-campo">
+                        <label for="sobrenome">Sobrenome:</label>
                         <input type="text" id="nome" required>
                     </div>
                 </div>
                 <div class="area-acesso formatacao">
-                    <div class="email">
-                        <label for="email">Digite o seu e-mail:</label>
+                    <div class="email titulo-campo">
+                        <label for="email">E-mail:</label>
                         <input type="email" id="email" placeholder="digite o seu e-mail" required>
                     </div>
-                    <div class="senha">
-                        <label for="senha">Digite uma Senha:</label>
+                    <div class="senha titulo-campo">
+                        <label for="senha">Senha:</label>
                         <input type="password" id="senha" placeholder="······" required>
                     </div>
                 </div>
                 <div class="area-contato formatacao">
-                    <div class="DDD">
-                        <label for="ddd">Põe a sua Discagem Direta à Distância:</label>
+                    <div class="DDD titulo-campo">
+                        <label for="ddd">DDD:</label>
                         <input type="number" max="99" id="ddd" placeholder="ddd">
                     </div>
 
-                    <div class="telefone">
-                        <label for="telefone">Ponha o seu telefone:</label>
+                    <div class="telefone titulo-campo">
+                        <label for="telefone">Telefone:</label>
                         <input type="text" id="telefone" placeholder="Digite seu telefone" required>
                     </div>
                 </div>
                 <div class="area-endereco formatacao">
                     <div class="endereco-numero">
-                        <div class="Endereço">
-                            <label for="adress">Ponha o seu endereço:</label>
+                        <div class="Endereço titulo-campo">
+                            <label for="adress">Endereço:</label>
                             <input type="text" id="endereco" placeholder="digite seu endereco">
                         </div>
-                        <div class="numero">
-                            <label for="number">Ponha o seu número:</label>
+                        <div class="numero titulo-campo">
+                            <label for="number">Número:</label>
 
                             <input type="number" id="numero" placeholder=000>
                         </div>
                     </div>
 
                     <div class="cidade-cep">
-                        <div class="cidade">
+                        <div class="cidade titulo-campo">
 
-                            <label for="city">Qual é a sua Cidade:</label>
+                            <label for="city">Cidade:</label>
 
                             <input type="text" id="cidade" placeholder="cidade">
 
                         </div>
-                        <div class="cep">
+                        <div class="cep titulo-campo">
 
-                            <label for="cep">Ponha o seu Código de Endereçamento Postal:</label>
+                            <label for="cep">CEP:</label>
 
                             <input type="zip-code" id="cep" placeholder="00000-000">
 
@@ -79,17 +95,17 @@
 
                 <div class="area-dados formatacao">
 
-                    <div class="data-nacimento">
+                    <div class="data-nascimento titulo-campo">
 
-                        <label for="data-nacimento">Ponha a sua data de nascimento:</label>
+                        <label for="data-nascimento">Data de nascimento:</label>
 
                         <input type="date" id="data-nacimento" required>
 
                     </div>
 
-                    <div class="genero">
+                    <div class="genero titulo-campo">
 
-                        <label for="genero">Qual é o seu gênero?</label>
+                        <label for="genero">Gênero:</label>
 
                         <select id="genero" required>
 
@@ -97,7 +113,7 @@
                             <option value="#">Selecione o seu gênero:
                             </option>
 
-                            <option value="#">Femionino</option>
+                            <option value="#">Feminino</option>
 
                             <option value="#">Masculino</option>
 
