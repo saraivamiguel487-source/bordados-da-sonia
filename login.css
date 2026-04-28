@@ -83,7 +83,8 @@ select {
 }
 
 .formatacao {
-    gap: 1rem;
+    flex-direction: column;
+
 
 }
 
