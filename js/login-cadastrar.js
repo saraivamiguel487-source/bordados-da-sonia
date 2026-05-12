@@ -18,12 +18,15 @@ if(FORM_CADASTRAR){
             cidade : document.getElementById ("cidade").value,
             cep : document.getElementById ("cep").value,
             dataNascimento : document.getElementById ("dataNascimento").value,
-            genero : document.getElementById ("genero").selectedOption.[0].text
+            genero : document.getElementById ("genero").selectedOptions[0].text
         }
+
         localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario))
         alert("Cadastro Realizado com SUCESSO!")
         window.location.href="login.html" 
+
     })
+    
 }
 
 
