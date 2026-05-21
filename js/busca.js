@@ -5,7 +5,7 @@ const itensCatalogo = document.querySelectorAll(".bordados")
 //Verificar se o formulário de busca existe na página
 
 if (formBusca) {
- formBusca.addEventListener("submit", function (event) {
+ formBusca.addEventListener('submit', function (event) {
    event.preventDefault();
  })
 
@@ -13,7 +13,7 @@ if (formBusca) {
 
 // agora vamos verivicar o texto que foi digitado
 
-campoBusca.addEventListener("input", function () {
+campoBusca.addEventListener('input', function() {
 
 
 
@@ -30,16 +30,10 @@ itensCatalogo.forEach(function(item) {
  const titulo = item.querySelector('h3').innerText.toLowerCase();
 // verificar se o termo de busca é igual ao título
  if (titulo.includes(termoBusca)) {
-   item.style.display = 'block'; //Mostrar o item
-
-
- } else {
+   item.style.display = 'block'; 
+   //Mostrar o item
+    } else {
   item.style.display = 'none'; // Ocultar o item
- }
-
-
-
-
-})
-
+    }
+  })
 })

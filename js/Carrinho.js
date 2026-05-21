@@ -7,8 +7,6 @@ let carrinho = JSON.parse(localStorage.getItem('itemCarrinho')) || []
 //Função para adicionar itens ao carrinho
 botoesBordados.forEach(function(botao){
     botao.addEventListener('click', function(){
-        event.preventDefault()
-        //Evita  que a página recarregue
 
         //Recebe dados do botão
         const nomeProduto = botao.getAttribute('data-nome')
@@ -32,7 +30,7 @@ botoesBordados.forEach(function(botao){
 
         //Depois de um tempo a mensagem some
         setTimeout(() => {
-            botao.innerText = 'Adicionar ao <i class="fa-solid fa-cart-shopping"></i>'
+            botao.innerText = 'Adicionado!'
             botao.classList.replace('btn-success', 'btn-primary')}, 2000)
         })
 })
