@@ -65,9 +65,9 @@ if (FORM_CADASTRAR) {
         const usuario = {
             nome: document.getElementById("nome").value,
             sobrenome: document.getElementById("sobrenome").value,
-            email: emailDigitado,
-            senha: senhaDigitada,
-            ddd: dddDigitado,
+            email: document.getElementById("email").value,
+            senha: document.getElementById("senha").value,
+            ddd: document.getElementById("ddd").value,
             telefone: document.getElementById("telefone").value,
             endereco: document.getElementById("endereco").value,
             numero: document.getElementById("numero").value,
