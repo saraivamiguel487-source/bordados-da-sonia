@@ -51,5 +51,24 @@ btnEnviarEmail.addEventListener('click', () => {
     window.location.href = `mailto:contato@bordadosdasonia.com.br?subject=${assunto}&body=${corpoEmail}`;
 })
 }
- 
- 
+//Finalizar o pedido por e-mail
+const btnfinalizar = document.getElementById('btn-finalizar');
+if (carrinho.length > 0) {
+    const textoOriginal = btnfinalizar.innerText;
+    btnFinalizar.innerHTML = 'O carrinho está vazio.';
+    btnfinalizar.classList.add('btn-success', 'btn-danger');
+    setTimeout(() => {
+        btnfinalizar.innerText = textoOriginal;
+        btnfinalizar.classList.remove('btn-success','btn-danger');
+    }, 2500);
+
+    return
+}
+    btnFinalizar.innerHTML = 'Preparando pedido...';
+BtnFinalizar.classList.add('btn-success','btn-danger');
+ constCliente = JSON.parse(localStorage.getItem('usuarioCadastro'));
+ textoPedidoPorEmail += `\n\nDados do cliente:\nNome: ${cliente.nome} ${cliente.sobrenome}\nEmail: ${cliente.email}\nTelefone: (${cliente.ddd}) ${cliente.telefone}\nEndereço: ${cliente.endereco}, Nº ${cliente.numero}, ${cliente.cidade}, CEP: ${cliente.cep}`;
+setTimeout(() => {
+    btnFinalizar.innerText = 'Enviar pedido por email';
+    btnFinalizar.classList.remove('btn-success','btn-danger');
+}, 2500);   
